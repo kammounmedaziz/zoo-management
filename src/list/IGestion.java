@@ -5,6 +5,6 @@ public interface IGestion <T>{
     public boolean rechecherEmployer(T t);
     public void supprimerEmploye(T employe);
     public void displayEmploye();
-    public void trierEmployeParID();
+//    public void trierEmployeParID();
     public void trierEmployerParDepartmentNameAndGrade(String nom);
 }

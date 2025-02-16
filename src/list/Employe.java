@@ -1,5 +1,5 @@
 package list;
-public class Employe {
+public class Employe implements Comparable <Employe> {
     private String firstName, lastName, departmentName;
     private int ID,grade;
     public Employe(String firstName, String lastName, String departmentName, int ID, int grade) {
@@ -73,5 +73,9 @@ public class Employe {
             return employe.ID == ID && employe.firstName.equals(firstName);
         return false;
 }
+    @Override
+    public int compareTo(Employe other) {
+        return Integer.compare(this.ID, other.ID);
+    }
 
 }
