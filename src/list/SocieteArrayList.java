@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 public abstract class SocieteArrayList implements IGestion<Employe> {
     List<Employe> employes = new ArrayList<>();
     @Override
@@ -35,8 +36,9 @@ public abstract class SocieteArrayList implements IGestion<Employe> {
         System.out.println(employes);
     }
 
-
-
+    public void trierEmployeParId() {
+        Collections.sort(employes);
+    }
 
 
     public void trierEmployeParNomDepartementEtGrade() {
